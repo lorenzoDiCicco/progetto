@@ -16,4 +16,6 @@ export type Dev = {
     birthDate:string
     gender:Gender
     skills:Skill[]
+
+    
 }
