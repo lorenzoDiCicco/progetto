@@ -1,5 +1,6 @@
 import type { Dev } from "./Dev";
-import Card from "./Crad";
+import Card from "./Card";
+import '../Css/Compare.css'
 
 type CompareProps={
     devA: Dev

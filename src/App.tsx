@@ -32,7 +32,7 @@ const[selection,setSelection]=useState<"A"|"B">("A")
           Seleziona due sviluppatori,confronta le loro competenze e scopri quale sceglire per il tuo progetto
         </p>
       </div>
-      <div>
+      <div className='btns'>
         <button className='btnA' onClick={() => setSelection("A")}>Seleziona Dev A</button>
         <button className='btnB' onClick={() => setSelection("B")}>Seleziona Dev B</button>
       </div>

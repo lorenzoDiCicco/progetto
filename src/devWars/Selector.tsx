@@ -1,4 +1,6 @@
 import type { Dev } from "./Dev";
+import '../Css/Selector.css'
+
 
 type SelectorProps={
     developers:Dev[]

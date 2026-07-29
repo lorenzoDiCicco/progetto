@@ -1,5 +1,6 @@
 import type { Dev } from "./Dev";
 import SkillBar from "./SkillBar";
+import '..Css/Card.css'
 
 type CardProps={
     dev:Dev
