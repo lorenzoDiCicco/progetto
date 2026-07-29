@@ -6,9 +6,10 @@ type SelectorProps={
     selectedDevB: Dev
     onSelectA:(dev:Dev)=>void
     onSelectB:(dev:Dev)=>void
+    selection:"A"|"B"
 }
 
-export default function ({developers,selectedDevA,selectedDevB,onSelectA,onSelectB}:SelectorProps){
+export default function ({developers,selectedDevA,selectedDevB,onSelectA,onSelectB,selection}:SelectorProps){
     return(
         <div className="selector">
             {developers.map(dev=>{
@@ -17,12 +18,10 @@ export default function ({developers,selectedDevA,selectedDevB,onSelectA,onSelec
                 return(
                     <div className={`devMini ${isSelectedA? "selectedA":''} ${isSelectedB? "selectedB":''}`}
                     onClick={()=>{
-                        if(isSelectedA){
+                        if(selection==="A"){
                             onSelectA(dev)
-                        }else if (isSelectedB){
-                            onSelectB(dev)
                         }else {
-                            onSelectA(dev)
+                            onSelectB(dev)
                         }
                     }}
                     >
