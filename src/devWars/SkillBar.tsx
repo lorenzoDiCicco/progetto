@@ -8,8 +8,14 @@ export default function SkillBar({skill}:SkillBarProps){
     return(
         <div className="skill">
             <div className="info">
-                <span>{skill.label}</span>
-                <span>{skill.value}/100</span>
+                <div className="infoSx">
+                    <div className="infoLabel">{skill.label} {" "}</div>
+                    <div className="infoType">{skill.type}</div>
+                </div>
+                <div className="infoDx">
+                    <div className="infoValue">{skill.value}/100</div>
+                </div>
+                
             </div>
             <div className="backgruond">
                 <div className={`progress ${skill.type}`}

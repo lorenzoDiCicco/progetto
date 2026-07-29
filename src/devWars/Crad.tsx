@@ -27,15 +27,16 @@ export default function Card({dev,label}: CardProps){
             </div>
             <div className="averages">
                 <div>
-                    <span>FRONT END</span>
+                    <span>FRONT END {" "}</span>
+
                     <strong>{frontendAverage.toFixed(1)}</strong>
                 </div>
                  <div>
-                    <span>BACK END</span>
+                    <span>BACK END {" "}</span>
                     <strong>{backendAverage.toFixed(1)}</strong>
                 </div>
                  <div>
-                    <span>OVERALL</span>
+                    <span>OVERALL {" "}</span>
                     <strong>{overallAverage.toFixed(1)}</strong>
                 </div>
 
