@@ -1,0 +1,61 @@
+.selector{
+    display: grid;
+    grid-template-columns: repeat(2,380px);
+    gap: 10px 0;
+    padding: 20px;
+    background-color: rgb(16, 24, 39);
+    border: 1px solid rgb(41, 55, 82);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    ;
+
+}
+
+.devMini{
+    position: relative;
+    padding: 7px;
+    background-color:#182338 ;
+    border-radius: 10px;
+    width: fit-content;
+    border: 2px solid transparent;
+}
+
+.devMini img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.devMini span:last-child{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+ .selectedA{
+    border-color:  rgb(7, 218, 255);
+}
+ .selectedB{
+    border-color: rgb(252, 64, 101);
+}
+
+.miniLabel{
+    position: absolute;
+    text-align: center;
+    padding: 3px 6px;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: smaller;
+}
+.labelA{
+    background-color: rgb(7, 218, 255);
+    color: black;
+}
+.labelB{
+    background-color: rgb(252, 64, 101);
+    color: white;
+}
