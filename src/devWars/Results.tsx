@@ -1,5 +1,6 @@
 import type { Dev } from "./Dev";
 import type { Skill } from "./Dev";
+import '../Css/Result.css'
 
 type ResultProps ={
     devA:Dev 

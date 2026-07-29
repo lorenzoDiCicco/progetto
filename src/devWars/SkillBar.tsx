@@ -1,4 +1,5 @@
 import type { Skill} from "./Dev";
+import '../Css/SkillBar.css'
 
 type SkillBarProps ={
     skill: Skill
