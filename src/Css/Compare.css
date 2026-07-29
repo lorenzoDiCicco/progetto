@@ -1,0 +1,11 @@
+.compare{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.vs{
+    text-align: center;
+    color: rgb(255, 188, 17);
+    font-size: larger;
+    font-weight: bold;
+}
