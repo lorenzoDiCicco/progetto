@@ -27,6 +27,10 @@
     bottom: 0;
     left: 0;
 
+
+}
+.infoType{
+    color: rgb(157, 169, 192);
 }
 .devInfo h2{
     margin-bottom: 5px;
@@ -68,7 +72,7 @@
 .averages span{
     display: block;
     font-size: 9px;
-    color: #9da9c0;
+    color: rgb(157, 169, 192);
     margin-bottom: 5px;
 }
 .averages strong{
@@ -76,4 +80,13 @@
 }
 .skills{
     padding: 0 15px 15px;
+}
+@media (min-width:600px) {
+    .averages{
+        display: flex;
+        justify-content: space-between;
+    }
+    .averages div{
+        width: 100%;
+    }
 }

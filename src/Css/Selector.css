@@ -1,6 +1,6 @@
 .selector{
     display: grid;
-    grid-template-columns: repeat(2,380px);
+    grid-template-columns: repeat(2,1fr);
     gap: 10px 0;
     padding: 20px;
     background-color: rgb(16, 24, 39);
@@ -58,4 +58,18 @@
 .labelB{
     background-color: rgb(252, 64, 101);
     color: white;
+}
+
+@media (min-width:600px) {
+   .selector{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+}
+@media(min-width:900px){
+    .selector{
+        display: flex;
+        justify-content: center;
+    }
 }
