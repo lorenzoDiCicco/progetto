@@ -21,7 +21,7 @@ function getSkill(dev: Dev , label:string):Skill | undefined{
     return "DRAW"
 }
 
- function getAverage(dev:Dev,type:"front-end"|"back-end"):number{
+ function getAverage(dev:Dev,type?:"front-end"|"back-end"):number{
     const skills=type? dev.skills.filter(skill=>skill.type===type):dev.skills
     return(
         skills.reduce((sum,skill)=>sum+skill.value,0)/skills.length
@@ -50,30 +50,31 @@ function getSkill(dev: Dev , label:string):Skill | undefined{
                         )
                     }
                     const winner= result==="A"?firstNameA:firstNameB
+                    const winnerClass = result ==="A"? "winnerA":"winnerB"
                     return(
-                        <div className="compariosnItem">
-                            Se vuoi il migliore in {skill.label}, scegli <strong>{winner}</strong>
+                        <div className="comparisonItem">
+                            Se vuoi il migliore in {skill.label}, scegli <strong className={winnerClass}>{winner}</strong>
                         </div>
                     )
                 })}
             </div>
-            <div className="averegeResults">
+            <div className="averageResults">
                 <div className="averageResult frontend-result">
                     <p>Per il Front-end,la scelta migliore è{" "}
-                         <strong>{getAverage(devA,"front-end")>getAverage(devB,"front-end")?firstNameA:firstNameB}
+                         <strong className={getAverage(devA,"front-end")>getAverage(devB,"front-end")? 'winnerA':'winnerB'}>{getAverage(devA,"front-end")>getAverage(devB,"front-end")?firstNameA:firstNameB}
                          </strong>
                     </p>
                 </div>
                 <div className="averageResult backend-result">
                     <p>Per il Back-end,la scelta migliore è{" "} 
-                        <strong>{getAverage(devA,"back-end")>getAverage(devB,"back-end")?firstNameA:firstNameB}
+                        <strong className={getAverage(devA,"back-end")>getAverage(devB,"back-end")?'winnerA':'winnerB'}>{getAverage(devA,"back-end")>getAverage(devB,"back-end")?firstNameA:firstNameB}
                         </strong>
                     </p>
                 </div>
                 <div className="averageResult overall-result">
                     <p>
                         Complessivamente scegli {" "}
-                        <strong>
+                        <strong className={getAverage(devA)>getAverage(devB)?'winnerA':'winnerB'}>
                             {getAverage(devA)>getAverage(devB)?firstNameA:firstNameB}
                         </strong>
                     </p>

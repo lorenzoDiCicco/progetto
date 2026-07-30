@@ -9,3 +9,10 @@
     font-size: larger;
     font-weight: bold;
 }
+@media(min-width:900px){
+    .compare{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }   
+}
