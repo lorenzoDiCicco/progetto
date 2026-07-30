@@ -1,0 +1,33 @@
+.skill{
+    background-color: rgb(25, 36, 58);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+
+}
+.infoSx{
+    display: flex;
+    gap: 5px;
+}
+.background{
+    height: 6px;
+    background-color: rgb(40, 54, 80);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress{
+    height: 10px;
+    border-radius: 10px;
+}
+ .front-end{
+    background-color: rgb(151, 86, 255);
+}
+.back-end{
+    background-color: rgb(32, 212, 115);
+}
