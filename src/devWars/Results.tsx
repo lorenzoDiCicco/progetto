@@ -57,7 +57,7 @@ function getSkill(dev: Dev , label:string):Skill | undefined{
                     )
                 })}
             </div>
-            <div className="averegeResult">
+            <div className="averegeResults">
                 <div className="averageResult frontend-result">
                     <p>Per il Front-end,la scelta migliore è{" "}
                          <strong>{getAverage(devA,"front-end")>getAverage(devB,"front-end")?firstNameA:firstNameB}

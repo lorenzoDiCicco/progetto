@@ -1,0 +1,49 @@
+.comparison{
+    margin-top: 25px;
+    padding: 10px;
+    background-color: rgb(17, 26, 60);
+    border: solid 1px rgb(40, 54, 80);
+    border-radius: 15px;
+}
+
+.comparison h2{
+    text-align: center;
+    color: rgb(255, 189, 20);
+    margin-bottom: 15px;
+}
+.list{
+    display: grid;
+    gap: 8px;
+}
+
+.compariosnItem{
+    background-color:rgb(25, 36, 58); 
+    padding: 12px;
+    border-left: 3px solid  rgb(151, 87, 255);
+    border-radius: 5px;
+}
+
+.compariosnItem strong{
+    color: rgb(0, 217, 255);
+}
+ .draw{
+    border-color: rgb(255, 189, 23);
+}
+.averegeResults{
+    margin-top: 10px;
+    display: grid;
+    gap: 8px;
+}
+.averageResult{
+    background-color: rgb(25, 36, 58);
+    padding: 12px;
+    border-left: 3px solid rgb(32, 212, 119);
+    border-radius: 5px;
+}
+.overall-result {
+    border-color: rgb(255, 189, 23);
+    text-align: center;
+}
+.averageResult strong{
+     color: #00d9ff;
+}
